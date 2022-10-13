@@ -38,6 +38,10 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem")//para não ficar em um loop infinito, ele ignora a postagem
 	private Tema tema; //chave estrangeira
 	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
+	
 	
 
 	public Tema getTema() {
@@ -79,6 +83,15 @@ public class Postagem {
 	public void setData(LocalDateTime data) {
 		this.data = data;
 	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
 	
 	
 
