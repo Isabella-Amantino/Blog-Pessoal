@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.blogpessoal.blogpessoal.model.Usuario;
 
-public class UserDetailsImpl implements UserDetails{
+public class UserDetailsImpl implements UserDetails{//Responsável de falar para  sistema de security que o Username é o usuário e o password é a senha
 	
 	private static final long serialVersionUID = 1L;
 	

@@ -12,7 +12,7 @@ import com.blogpessoal.blogpessoal.model.Usuario;
 import com.blogpessoal.blogpessoal.repository.UsuarioRepository;
 
 @Service
-public class UserDetailsServiceImpl implements UserDetailsService{
+public class UserDetailsServiceImpl implements UserDetailsService{//Responsável de validar se o Username existe lá
 	
 	@Autowired
 	private UsuarioRepository repository;

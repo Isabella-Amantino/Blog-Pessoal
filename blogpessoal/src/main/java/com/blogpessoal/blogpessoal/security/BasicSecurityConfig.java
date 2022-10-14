@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SuppressWarnings("deprecation")
 @EnableWebSecurity
-public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
+public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{//Responsável de configurar algumas permissões
 	
 	@Autowired
 	private UserDetailsService userDetailsService;
