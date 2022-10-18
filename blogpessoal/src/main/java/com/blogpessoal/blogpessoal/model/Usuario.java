@@ -39,6 +39,23 @@ public class Usuario {
 	@OneToMany(mappedBy = "usuario" , cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
+	
+	
+
+	public Usuario(Long id,  String nome,String usuario, String senha,String foto) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.foto = foto;
+	}
+	
+	
+
+	public Usuario() {//Se tiver informação nula, não dá erro. Por isso fazer um construtor vazio.
+	}
+
+
 
 	public Long getId() {
 		return id;
